@@ -27,6 +27,10 @@ background = pygame.image.load("AnimatedStreet.png")
 DISPLAYSURF = pygame.display.set_mode((400,600))
 DISPLAYSURF.fill(white)
 pygame.display.set_caption("Game")
+
+pygame.mixer.music.load("background.wav") 
+pygame.mixer.music.play(-1) 
+pygame.mixer.music.set_volume(0.5)
  
 class Enemy(pygame.sprite.Sprite):
       def __init__(self):
